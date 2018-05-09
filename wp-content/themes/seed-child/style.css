@@ -1,0 +1,195 @@
+/*
+Theme Name: Seed Child
+Theme URI: https://th.seedthemes.com/seed-kit/
+Template: seed
+Author: SeedThemes
+Author URI: https://SeedThemes.com
+Description: Starter Theme
+Tags: featured-images,custom-menu
+Version: 1.4.3.1525604878
+Updated: 2018-05-06 11:07:58
+
+*/
+
+/* GENERAL */
+
+.text-grey{
+  color:grey;
+}
+
+.text-lightgrey{
+  color:#a7a6a6;
+}
+
+.enlarge{
+  width:100% !important;
+}
+
+.section {
+    padding: 30px 15px 30px;
+}
+.kh-btn {
+    background-color: #f39f03;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.site-header {
+    background-color: #0a2d76 !important;
+}
+
+.menu-item a{
+  color: #ffffff;
+}
+.site-toggle i > span {
+    background: #ddd !important;
+}
+/* FRONT PAGE */
+
+.top-line-title{
+    width: 20px;
+    border-top: 4px solid #054992;
+    margin: auto;
+}
+
+.title-description{
+  text-align: center;
+}
+
+
+/* ABOUT US */
+
+.main-header-title{
+  margin-bottom: 30px;
+}
+
+.header-title{
+    color: #0a2d76;
+    padding: 12px 0 10px;
+    margin: 0px;
+}
+
+.line-title{
+  background: linear-gradient(to right, #1e9cd7 0%, #2e3192 100%);
+  border-top: 0px solid transparent;
+  border-image: linear-gradient(to right, #1e9cd7 0%, #2e3192 100%);
+  border-image-slice: 1;
+  border-bottom: 4px solid #0075be;
+  width: 120px;
+}
+
+
+/* Product */
+.category-items{
+  padding-top:5px;
+  padding-bottom:5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.category-items-text{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.card{
+  text-align: center;
+  border:none;
+
+}
+
+.card-img-top{
+  width:100%;
+  height:210px;
+}
+
+
+
+/* CONTACT US */
+.caldera-grid .form-group .form-control {
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.caldera-grid .form-group {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.caldera-grid .form-group textarea.form-control {
+    padding-right: 4px;
+    height: auto;
+}
+
+.contact-info p {
+    margin: 0 0 0.5em;
+}
+
+
+/* FOOTER */
+
+.footer-border {
+  background: linear-gradient(to right, #1e9cd7 0%, #2e3192 100%);
+  border-top: 6px solid transparent;
+  border-image: linear-gradient(to right, #1e9cd7 0%, #2e3192 100%);
+  border-image-slice: 1;
+}
+
+.top-footer {
+    padding: 25px 0 35px;
+    height: auto;
+    background-color: #e6e6e6;
+}
+
+.top-footer .site-info {
+  color: #333333;
+}
+
+.contact-qr-line {
+    max-width: 175px;
+    height: auto;
+}
+
+.bottom-footer {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0a2d76;
+    height: 40px;
+}
+.top-footer .site-info i{
+    color: #0a2d76;
+}
+
+.tag-cloud-link{
+    display: block;
+    float: left;
+    padding: 2px 5px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    /* background: #EEE; */
+    /*color: white;*/
+    text-transform: lowercase;
+    border: 2px solid #025aa5;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,122 @@
+# Translation of Plugins - Seed Fonts - Stable (latest release) in Thai
+# This file is distributed under the same license as the Plugins - Seed Fonts - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-06-03 16:17:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: th\n"
+"Project-Id-Version: Plugins - Seed Fonts - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://www.seedthemes.com"
+msgstr "https://www.seedthemes.com"
+
+#. Author of the plugin/theme
+msgid "SeedThemes"
+msgstr "SeedThemes"
+
+#. Description of the plugin/theme
+msgid "Enable web fonts on Appearance -> Fonts. You can add more by <a href=\"https://www.seedthemes.com/plugin/seed-fonts/\" target=\"_blank\">uploading your web fonts to the theme folder</a>."
+msgstr "เปิดการใช้งานฟอนต์สำหรับเว็บที่ รูปแบบบล็อก -> ฟอนต์ หากต้องการเพิ่มฟอนต์สามารถ <a href=\"https://www.seedthemes.com/plugin/seed-fonts/#upload-your-fonts\" target=\"_blank\">อัพโหลดไปไว้ในธีม</a> ได้"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.seedthemes.com/plugin/seed-fonts"
+msgstr "https://www.seedthemes.com/plugin/seed-fonts"
+
+#: seed-fonts.php:471
+msgid "%"
+msgstr "%"
+
+#: seed-fonts.php:471
+msgid "em"
+msgstr "em"
+
+#: seed-fonts.php:471
+msgid "px"
+msgstr "px"
+
+#: seed-fonts.php:469
+msgid "Size Unit"
+msgstr "หน่วย"
+
+#: seed-fonts.php:463
+msgid "Size"
+msgstr "ขนาดตัวอักษร"
+
+#: seed-fonts.php:447
+msgid "Fonts Settings - Body"
+msgstr "ตั้งค่าฟอนต์ - ส่วนเนื้อหา"
+
+#: seed-fonts.php:425 seed-fonts.php:489
+msgid "Generated CSS"
+msgstr "CSS ที่สร้างขึ้น"
+
+#: seed-fonts.php:421 seed-fonts.php:485
+msgid "Yes (!important added)"
+msgstr "ใช่ (เพิ่มคำสั่ง !important)"
+
+#: seed-fonts.php:419 seed-fonts.php:483
+msgid "Force Using This Font?"
+msgstr "บังคับใช้ฟอนต์นี้?"
+
+#: seed-fonts.php:414 seed-fonts.php:478
+msgid "Separate selectors with commas"
+msgstr "คั่นระหว่าง Selector ด้วยเครื่องหมาย \",\""
+
+#: seed-fonts.php:412 seed-fonts.php:476
+msgid "Selectors"
+msgstr "Selectors"
+
+#: seed-fonts.php:401
+msgid "400 = Normal, 700 = Bold. For more detail, please see <a href=\"%1$s\" target=\"_blank\">W3.org</a>"
+msgstr "400 = ตัวธรรมดา, 700 = ตัวหนา. รายละเอียดเพิ่มเติม ดูที่ <a href=\"%1$s\" target=\"_blank\">W3.org</a>"
+
+#: seed-fonts.php:400
+msgid "Weight"
+msgstr "น้ำหนัก"
+
+#: seed-fonts.php:394 seed-fonts.php:457
+msgid "Font"
+msgstr "ฟอนต์"
+
+#: seed-fonts.php:390 seed-fonts.php:453
+msgid "Yes"
+msgstr "ใช่"
+
+#: seed-fonts.php:388 seed-fonts.php:451
+msgid "Enable?"
+msgstr "เปิดใช้งาน?"
+
+#: seed-fonts.php:384
+msgid "Fonts Settings - Heading"
+msgstr "ตั้งค่าฟอนต์ - ส่วนพาดหัว"
+
+#: seed-fonts.php:156
+msgid "Body"
+msgstr "ส่วนเนื้อหา"
+
+#: seed-fonts.php:155
+msgid "Heading"
+msgstr "พาดหัว"
+
+#: seed-fonts.php:150
+msgid "This plugin comes with 8 Thai web fonts. You can add your own collection by <a href=\"%1$s\" target=\"_blank\">uploading your web fonts to the theme folder</a>"
+msgstr "ปลั๊กอินนี้มาพร้อมกับฟอนต์ไทย 8 ฟอนต์ หากต้องการใช้ฟอนต์อื่น ให้ <a href=\"https://www.seedthemes.com/plugin/seed-fonts/#upload-your-fonts\" target=\"_blank\">สร้างฟอนต์สำหรับเว็บแล้วอัพโหลดไปไว้ในธีม</a>"
+
+#: seed-fonts.php:146
+msgid "Settings updated successfully."
+msgstr "ตั้งค่าเรียบร้อย"
+
+#: seed-fonts.php:128
+msgid "Fonts"
+msgstr "ฟอนต์"
+
+#. #-#-#-#-#  seed-fonts-code.pot (Seed Fonts 1.1.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: seed-fonts.php:128 seed-fonts.php:142
+msgid "Seed Fonts"
+msgstr "Seed Fonts"
