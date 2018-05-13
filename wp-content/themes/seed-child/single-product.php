@@ -15,9 +15,23 @@ get_header(); ?>
 </div>
 <div class="container">
   <div class="row">
+
     <div class="col-12">
-        <a href="/kaihilo" class="text-grey"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a> / <label class="text-lightgrey">สินค้า</label>
+      <?php
+
+      foreach (get_the_category() as $category) {
+          $slugname =  $category->slug .'';
+          $catname = $category->name .'';
+      }
+
+
+      ?>
+
+
+        <a href="/kaihilo" class="text-grey"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a> /<a href="/kaihilo/รายการสินค้า" class="text-grey"><label class="text-lightgrey"> สินค้า </label></a> /
+        <a href="/kaihilo/category/<?php echo $slugname ?>" class="text-grey"><label class="text-lightgrey"> <?php echo $catname; ?></label></a> / <label><?php the_title(); ?></label>
     </div>
+
 
     <div class="col-lg-3 col-md-12 mb-md-5 mb-5">
       <h2 class="header-title"><?php the_title(); ?></h2>
@@ -89,9 +103,7 @@ get_header(); ?>
             <?php
 
 
-            foreach (get_the_category() as $category) {
-                $slugname =  $category->slug .'';
-            }
+
 
                 $args = array(
                   'post_type' => 'product',
