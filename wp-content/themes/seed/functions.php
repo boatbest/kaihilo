@@ -79,7 +79,7 @@ function seed_setup() {
 	set_post_thumbnail_size( 370, 277, TRUE );
 	/* add_image_size( 'featured', 840, 400, true ); */
 
-	
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Main Menu', 'seed' ),
@@ -204,7 +204,7 @@ function seed_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 		) );
-	
+
 }
 add_action( 'widgets_init', 'seed_widgets_init' );
 
@@ -226,7 +226,7 @@ function seed_scripts() {
 			break;
 	}
 	if (SEED_FONTAWESOME == 'enable') {
-		wp_enqueue_style( 'seed-font-awesome', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css' );	
+		wp_enqueue_style( 'seed-font-awesome', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css' );
 	}
 	wp_enqueue_style( 'seed-start', get_template_directory_uri() . '/vendor/seedthemes/seed.css' );
 	wp_enqueue_style( 'seed-style', get_stylesheet_uri() );
@@ -236,6 +236,7 @@ function seed_scripts() {
 	wp_enqueue_style( 'seed-side', get_template_directory_uri() . '/css/side.css' );
 	wp_enqueue_style( 'seed-etc', get_template_directory_uri() . '/css/etc.css' );
 	wp_enqueue_style( 'seed-foot', get_template_directory_uri() . '/css/foot.css' );
+	wp_enqueue_style( 'owlcss', get_template_directory_uri() . '/vendor/owlcarousel/css/owl.carousel.min.css' );
 
 
 	wp_enqueue_script( 'jquery' );
@@ -249,6 +250,8 @@ function seed_scripts() {
 		default:
 			break;
 	}
+	wp_enqueue_script( 'owl', get_template_directory_uri() . '/vendor/owlcarousel/js/owl.carousel.js', array( 'jquery' ), array(), true );
+
 	wp_enqueue_script( 'seed-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'seed-slidebars-script', get_template_directory_uri() . '/vendor/slidebars/slidebars.min.js', array(), '0.10.3', true );
 	wp_enqueue_script( 'seed-main', get_template_directory_uri() . '/js/main.js', array(), '2017-1', true );
@@ -407,7 +410,7 @@ function seed_bottom_admin_bar() {
 		@media screen and (max-width: 782px) {body.admin-bar .site-canvas {margin-bottom: 0 !important;}}
 	  #wpadminbar {top: auto !important;bottom: 0;}
 	  #wpadminbar .quicklinks .ab-sub-wrapper {bottom: 28px;}
-	  #wpadminbar .menupop .ab-sub-wrapper, 
+	  #wpadminbar .menupop .ab-sub-wrapper,
 	  #wpadminbar .shortlink-input {border-width: 1px 1px 0 1px;box-shadow:0 -2px 4px rgba(0,0,0,0.2);}
 		body.wp-admin div#wpwrap div#footer {bottom: 28px !important;}
 	</style>';
@@ -544,4 +547,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-

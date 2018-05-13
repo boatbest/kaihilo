@@ -32,13 +32,16 @@
           ?>
 
 
-                  <?php foreach ( $terms as $term ) { ?>
-                    <a class="category-items-text" href="<?php echo get_term_link($term->slug, $taxonomy); ?>">
-                      <div class="category-items">
-                        <?php echo $term->name; ?>
-                      </div>
-                      </a>
-                  <?php } ?>
+                  <?php foreach ( $terms as $term ) {
+                          if($term->name != 'ไม่มีหมวดหมู่'){
+                  ?>
+                            <a class="category-items-text" href="<?php echo get_term_link($term->slug, $taxonomy); ?>">
+                              <div class="category-items">
+                                <?php echo $term->name; ?>
+                              </div>
+                            </a>
+                    <?php }
+                  }?>
 
 
           <?php endif;
@@ -66,143 +69,12 @@
               <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
 
                 <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
+                  <div class="product-card">
+                    <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
                   </div>
-                </div>
-
-              </div>
-
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-6 px-1 mb-5">
-
-                <div class="card">
-                  <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><?php echo get_the_title(); ?></h5>
-                    <a href="<?php echo get_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
+                  <div class="card-body mt-2">
+                    <h4 class="card-title"><?php echo get_the_title(); ?></h4>
+                    <a href="<?php echo get_permalink(); ?>" class="btn btn-yellow">สั่งซื้อ</a>
                   </div>
                 </div>
 

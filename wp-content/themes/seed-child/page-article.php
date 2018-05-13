@@ -16,19 +16,45 @@ get_header();?>
 
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main -hide-title" role="main">
+				<div class="row">
 
-				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 					<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
+
+						$args = array(
+							'post_type' => 'article',
+							'orderby' => 'ID',
+							'order' => 'ASC',
+							);
+						$the_query = new WP_Query( $args );
 					?>
 
-				<?php endwhile; // End of the loop. ?>
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+
+					<div class="col-lg-4 col-md-6  col-12 mb-5">
+						<div class="card">
+							<a href="<?php echo get_permalink(); ?>">
+								<img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap">
+							</a>
+							<div class="card-body mt-2">
+								<a href="<?php echo get_permalink(); ?>">
+									<h3 class="card-title text-left"><?php echo get_the_title(); ?></h3>
+								</a>
+								<p class="card-text text-left"><?php echo get_the_excerpt(); ?></p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				<?php endwhile; wp_reset_postdata(); ?>
+
+
+				</div>
+
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
