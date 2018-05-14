@@ -95,7 +95,7 @@ get_header(); ?>
       </div>
       <div class="row mt-5">
         <div class="col-12 mb-3">
-          <h4 class="header-title">รายการสินค้าอิ่นๆที่เกั่ยวข้อง</h4>
+          <h4 class="header-title">รายการสินค้าอิ่นๆที่เกี่ยวข้อง</h4>
           <div class="line-title"></div>
         </div>
         <div class="col-12">

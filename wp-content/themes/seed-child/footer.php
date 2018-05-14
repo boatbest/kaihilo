@@ -30,29 +30,37 @@
 			   <div class="container">
 					<div class="row">
 							<div class="col-md-5 col-12" style="text-align:left;">
+								    <?php
+										$args = array(
+											'post_type' => 'contact_us',
+											'p' => 71
+											);
+										$the_query = new WP_Query( $args );
+									?>
+
+									<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 								<h3>ติดต่อเรา</h3>
 								<div class="row">
 									<div class="col-2 col-lg-1 pr-3">
 										<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
 									</div>
 									<div class="col-10 col-lg-11">
-										<p class="">8/8หมู่ 4 ซอย เทศบาล 19 ถนนบางกรวย-ไทยน้อย ตำบลโสนลอย 
-										อำเภอ บางบัวทอง จังหวัดนนทบุรี 11110</p>
+										<p class=""><?php $key="address"; echo get_post_meta($post->ID, $key, true); ?></p>
 									</div>
 									<div class="col-2 col-lg-1 pr-3">
 										<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
 									</div>
 									<div class="col-10 col-lg-11">
-										<p class="">083-556-2244,094-555-6665</p>
+										<p class=""><?php $key="phone"; echo get_post_meta($post->ID, $key, true); ?></p>
 									</div>
 									<div class="col-2 col-lg-1 pr-3">
 										<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
 									</div>
 									<div class="col-10 col-lg-11">
-										<p class="">example@mail.com</p>
+										<p class=""><?php $key="email"; echo get_post_meta($post->ID, $key, true); ?></p>
 									</div>
 								</div>
-								
+									<?php endwhile; wp_reset_postdata(); ?>
 							</div>
 
 							<div class="col-md-4  col-12" style="text-align: left;">
@@ -70,7 +78,17 @@
 
 							<div class="col-md-3 col-12">
 								<div class="contact-qr-line mx-auto">
-							  		<img src="http://localhost/kaihilo/wp-content/uploads/2018/05/ดาวน์โหลด.png" alt="Image" />
+									<?php
+										$args = array(
+											'post_type' => 'contact_us',
+											'p' => 71
+											);
+										$the_query = new WP_Query( $args );
+									?>
+
+									<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							  		<img src="<?php the_post_thumbnail_url('full'); ?>" alt="Image" />
+							  		<?php endwhile; wp_reset_postdata(); ?>
 							  	</div>
 							</div>
 					</div>
